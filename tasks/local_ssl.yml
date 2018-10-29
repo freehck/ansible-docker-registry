@@ -7,5 +7,5 @@
     - {f: '{{docker_registry_ssl_standalone_key}}', t: key.pem, m: '0400'}
   file:
     state: hard
-    src: '{{docker_registry_conf_dir}}/pki/{{item.t}}'
-    dest: '{{item.f}}'
+    src: '{{item.f}}'
+    dest: '{{docker_registry_conf_dir}}/pki/{{item.t}}'
