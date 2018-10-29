@@ -38,6 +38,7 @@ docker_registry_letsencrypt_dir: /etc/docker/registry
 docker_registry_letsencrypt_dir_on_host: /etc/docker/registry
 docker_registry_letsencrypt_email: freehck@freehck.ru
 
+docker_registry_ssl_local_standalone_enabled: false
 docker_registry_ssl_standalone_enabled: false
 docker_registry_ssl_standalone_path: ~/certs
 docker_registry_ssl_standalone_cert: "{{docker_registry_ssl_standalone_path}}/{{ansible_fqdn}}.crt"

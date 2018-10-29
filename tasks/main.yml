@@ -18,7 +18,10 @@
 
 - include: standalone_ssl.yml
   when: docker_registry_ssl_standalone_enabled
-    
+
+- include: local_ssl.yml
+  when: docker_registry_ssl_local_standalone_enabled
+
 - name: add passwds to /etc/docker-registry/auth/registry.htpasswd
   become: yes
   become_user: root

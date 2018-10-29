@@ -10,7 +10,7 @@ http:
   addr: 0.0.0.0:5000
   hostname: https://{{inventory_hostname}}
   tls:
-{% if docker_registry_pki_enabled or docker_registry_ssl_standalone_enabled %}
+{% if docker_registry_pki_enabled or docker_registry_ssl_standalone_enabled or docker_registry_ssl_local_standalone_enabled %}
     certificate: /pki/cert.pem
     key: /pki/key.pem
 {% endif %}
